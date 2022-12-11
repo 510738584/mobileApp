@@ -7,11 +7,13 @@ function getRem(width, rem) {
     html.style.fontSize = `${(oWidth / width) * rem}px`;
   }
 }
-
-window.onload = function () {
+function onload() {
   getRem(750, 100);
-};
+}
+window.onload = onload();
 
-window.onresize = function () {
+function resize() {
   getRem(750, 100);
-};
+}
+
+window.onresize = resize();

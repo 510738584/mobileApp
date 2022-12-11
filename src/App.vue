@@ -1,5 +1,12 @@
 <template>
-  <div id="app">this is test this fontSize</div>
+  <div id="app">
+    <router-view></router-view>
+  </div>
 </template>
 
-<style lang="less"></style>
+<style lang="less">
+#app {
+  width: 100%;
+  // overflow: hidden;
+}
+</style>
