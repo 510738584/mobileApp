@@ -1,5 +1,5 @@
 <template>
-  <div class="footer-item-container" :class="isActive">
+  <div class="footer-item-container" :class="isActive" @click="handleClick(itemObj)">
     <span class="iconfont" :class="itemObj.iconType"></span>
     <span class="name">{{itemObj.name}}</span>
   </div>
@@ -19,8 +19,10 @@ export default {
       return this.$route.path === this.itemObj.path ? 'active' : '';
     },
   },
-  mounted() {
-
+  methods: {
+    handleClick(obj) {
+      this.$router.push(obj.path);
+    },
   },
 };
 </script>
