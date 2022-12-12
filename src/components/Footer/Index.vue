@@ -1,6 +1,6 @@
 <template>
   <div class="footer-container">
-    <FooterItem v-for="item in itemList" :key="item.id" :itemObj="item" />
+    <FooterItem v-for="item in itemList" :key="item.id" :itemObj="item"/>
   </div>
 </template>
 
@@ -19,19 +19,23 @@ export default {
           id: 1,
           iconType: 'icon-home-fill',
           name: '首页',
+          path: '/index',
         },
         {
           id: 2,
           iconType: 'icon-Similarproducts-fill',
           name: '分类',
+          path: '/category',
         }, {
           id: 3,
           iconType: 'icon-RFQ-logo-fill',
           name: '灵感',
+          path: '/ins',
         }, {
           id: 4,
           iconType: 'icon-all-fill1',
           name: '文章',
+          path: '/article',
         },
       ],
     };
@@ -50,5 +54,6 @@ export default {
   height: .8rem;
   box-sizing: border-box;
   display: flex;
+  background: #fff;
 }
 </style>

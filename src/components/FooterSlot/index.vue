@@ -48,7 +48,7 @@ export default {
 
 <style lang="less" scoped>
 .footer-container{
-  border-top: .01rem solid #ccc;
+  // border-top: .01rem solid #ccc;
   padding: .1rem 0;
   position: fixed;
   bottom: 0;
@@ -57,5 +57,7 @@ export default {
   height: .8rem;
   box-sizing: border-box;
   display: flex;
+  color: #333;
+  background: #fff;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="footer-item-container">
+  <div class="footer-item-container" :class="isActive">
     <span class="iconfont" :class="itemObj.iconType"></span>
     <span class="name">{{itemObj.name}}</span>
   </div>
@@ -14,12 +14,11 @@ export default {
       default: () => ({}),
     },
   },
-  data() {
-    return {
-
-    };
+  computed: {
+    isActive() {
+      return this.$route.path === this.itemObj.path ? 'active' : '';
+    },
   },
-
   mounted() {
 
   },
