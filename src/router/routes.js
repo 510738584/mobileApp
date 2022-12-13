@@ -2,6 +2,7 @@ import Index from '@/views/Index/index.vue';
 
 const Category = () => import('@/views/Category/index.vue');
 const Article = () => import('@/views/Article/index.vue');
+const Ins = () => import('@/views/Ins/index.vue');
 export default [
   {
     path: '',
@@ -16,6 +17,11 @@ export default [
     path: '/category',
     component: Category,
     name: 'category',
+  },
+  {
+    path: '/ins',
+    component: Ins,
+    name: 'ins',
   },
   {
     path: '/article',
